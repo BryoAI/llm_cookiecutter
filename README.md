@@ -28,6 +28,33 @@ pip install -r requirements.txt
 python download_llama.py
 ```
 
+### Language Model Inference
+1. Add your question to the `question.txt` file for batch inference
+2. Run the inference script
+```
+python inference.py
+```
+
+### Language Model API
+1. Run the Flask API
+```
+python3 api.py
+```
+
+2. Send a POST request to the API endpoint
+```
+curl -X POST http://YOUR_IP_ADDRESS:8000/llama -H "Content-Type: application/json" -d '{"question": "What is the capital of France?"}'
+```
+
+or use the `test_api.py` script
+```
+python test_api.py
+```
+The test_api.py uses requests to send a POST request to the API endpoint. The response is then printed to the console.
+
+
+
+
 
 
 
