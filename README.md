@@ -84,7 +84,7 @@ python test_api.py
 The test_api.py uses requests to send a POST request to the API endpoint. The response is then printed to the console.
 
 ## Use bryo hosted models
-We have also hosted our own language models for our Agents. We use GPUs and a much more powerful version of the Llama model, that's mentioned above.
+We have also hosted our own language models for our Agents. We use GPUs and a much more powerful version of the Llama model.
 <br>
 Bryo will be happy to help you setup your own language models. Or give to access to our hosted models.
 You can reach out to us at: info@bryo.io
