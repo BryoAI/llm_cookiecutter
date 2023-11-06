@@ -22,24 +22,29 @@ cd llm_cookiecutter
 pip install -r requirements.txt
 ```
 
-## Language Model Deployment
-1. Download the Llama language model
+[comment]: <> (## Language Model Deployment)
+4. Download the Llama 2 language model CPP version <br>
 ```
-python download_llama.py
+wget https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGUF/resolve/main/llama-2-7b-chat.Q6_K.gguf
 ```
+Above LLM requires 9GB RAM atleast. For more models and thier memory requirement check [TheBloke's](https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGUF#provided-files) HuggingFace repo
 
-### Language Model Inference
+5. Why CPU installation?
+6. Memory requirements and AWS server recommendations
+
+### Language Model Inference (running locally)
 1. Add your question to the `question.txt` file for batch inference
 2. Run the inference script
 ```
 python inference.py
 ```
 
-### Language Model API
-1. Run the Flask API
+### Language Model API (serving)
+1. Spin up the GUnicorn server
 ```
-python3 api.py
+gunicorn --bind 0.0.0.0:8000 wsgi:app --timeout 120
 ```
+make sure 0.0.0.0 & port 8000
 
 2. Send a POST request to the API endpoint
 ```
@@ -52,6 +57,7 @@ python test_api.py
 ```
 The test_api.py uses requests to send a POST request to the API endpoint. The response is then printed to the console.
 
+## Use bryo hosted models
 
 
 
