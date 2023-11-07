@@ -76,22 +76,18 @@ The repository also gives you the code to serve the language model through an AP
 gunicorn --bind 0.0.0.0:8000 wsgi:app --timeout 120
 ```
 make sure 0.0.0.0 & port 8000 are free.
+<br>
+p.s. If you are using AWS EC2 instances, you might have to setup inbound rules for enabling the incoming traffic
 
 2. Send a POST request to the API endpoint
 ```
 curl -X POST http://YOUR_IP_ADDRESS:8000/llama -H "Content-Type: application/json" -d '{"question": "What is the capital of France?"}'
 ```
 
-or use the `test_api.py` script
-```
-python test_api.py
-```
-The test_api.py uses requests to send a POST request to the API endpoint. The response is then printed to the console.
-
 ## Use bryo hosted models
 We have also hosted our own language models for our Agents. We use GPUs and a much more powerful version of the Llama model.
 <br>
-Bryo will be happy to help you setup your own language models. Or give to access to our hosted models.
+Bryo will be happy to help you setup your own language models.
 You can reach out to us at: info@bryo.io
 
 
