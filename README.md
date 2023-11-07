@@ -12,15 +12,11 @@ linkedin: https://www.linkedin.com/company/bryo-ai
 This repository provides a step-by-step guide for setting up and deploying open source language models, such as Llama. The code includes instructions for downloading and installing the Llama language model, Python functions for inference, and Flask APIs to use these Language Models in your applications.
 
 This cookiecutter is what bryo used to host its own language models for our Agents. You can checkout them here:
-1. Bryo Customer Emails Agent: https://apps.odoo.com/apps/modules/16.0/client_communication_copilot/
-2. Bryo Vendor Emails Agent: https://apps.odoo.com/apps/modules/16.0/lead_time_copilot/
+1. [Bryo Customer Emails Agent](https://apps.odoo.com/apps/modules/16.0/client_communication_copilot/)
+2. [Bryo Vendor Emails Agent](https://apps.odoo.com/apps/modules/16.0/lead_time_copilot/)
 
 ## Pre-requisites
-- Python 3.7 or higher
-- Pip package installer
-- Access to a cloud platform or server for deployment
-- Gunicorn for serving the APIs. Install it using: https://docs.gunicorn.org/en/latest/install.html
-
+- Python 3.9 or higher
 
 ## Installation
 1. Clone this repository
