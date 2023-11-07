@@ -4,7 +4,12 @@ contact: info@bryo.io
 <br>
 linkedin: https://www.linkedin.com/company/bryo-ai
 
-This repository provides a step-by-step guide for setting up and deploying open source language models, such as Llama, or proprietary language models like Vertex AI by Google. The code includes instructions for downloading and installing the Llama language model, Python functions for inference, and Flask APIs for exposing these language models through endpoints.
+###Quick Links
+
+1. [Open source LLms demo](http://54.244.1.138:8889/)
+2. Link to odoo conference talk deck: 
+
+This repository provides a step-by-step guide for setting up and deploying open source language models, such as Llama. The code includes instructions for downloading and installing the Llama language model, Python functions for inference, and Flask APIs to use these Language Models in your applications.
 
 This cookiecutter is what bryo used to host its own language models for our Agents. You can checkout them here:
 1. Bryo Customer Emails Agent: https://apps.odoo.com/apps/modules/16.0/client_communication_copilot/
