@@ -1,21 +1,17 @@
 from llm import llama
+import sys
 
 llm = llama()
-
-# write a function that takes the question as input from the user via terminal, calls the query_llm function of llm and prints the output
 def ask_llm():
-    question = input("Enter your question: ")
-    # for response_chunk in llm.query_llm(question):
-    #     # print in same line
-    #     print(response_chunk, end='')
-    #     # print(response_chunk)
-    # # print(output)
-    print(question)
-    return llm.llm(question)
-    #return llm.query_llm(question)
+    user_input = input("Enter your question: ")
+    question = "Q: {}. A: ".format(user_input)
+    output = llm.llm(question)
+    print("\n\n\n")
+    print("-"*100)
+    print("Ignore the following LlamaCpp Warning")
+    print("-"*100)
+    return output
 
-ask_llm()
-
-
-
-
+if __name__ == "__main__":
+    ask_llm()
+    

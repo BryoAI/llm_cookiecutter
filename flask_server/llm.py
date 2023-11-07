@@ -11,11 +11,7 @@ class llama:
     top_p= 1,
     callback_manager=callback_manager,
     verbose=False,
+    stop=["Q:", "\n"]
 )
     def query_llm(self, query):
-        print(query)
         return self.llm(query)
-
-    # def query_llm(self, question):
-    #     for response_chunk in self.llm(question):
-    #         yield response_chunk
