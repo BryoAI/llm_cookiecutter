@@ -37,7 +37,10 @@ pip install -r requirements.txt
 [comment]: <> (## Language Model Deployment)
 4. Download the Llama 2 language model, CPP version <br>
 ```
+mkdir model
+cd model
 wget https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGUF/resolve/main/llama-2-7b-chat.Q6_K.gguf
+cd ./../
 ```
 Above LLM requires 9GB RAM atleast. For more models and their memory requirement check [TheBloke's](https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGUF#provided-files) HuggingFace repo
 ### The CPU vs GPU debate
