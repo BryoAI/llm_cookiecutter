@@ -77,7 +77,7 @@ p.s. If you are using AWS EC2 instances, you might have to setup inbound rules f
 
 2. Send a POST request to the API endpoint
 ```
-curl -X POST http://YOUR_IP_ADDRESS:8000/llama -H "Content-Type: application/json" -d '{"question": "What is the capital of France?"}'
+curl -X POST http://YOUR_IP_ADDRESS:8000/llama -H "Content-Type: application/json" -d '{"question": "What is the capital of Germany?"}'
 ```
 
 ## Use bryo hosted models
