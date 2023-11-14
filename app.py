@@ -9,11 +9,12 @@ class App:
         self.llm = llm
 
     def ask_llm(self, question: str) -> str:
+        # This also prints to the terminal so no need to print the returned str
         return self.llm.query(f"Q: {question}. A: ")
 
     def ask_llm_terminal(self) -> None:
         user_input = input("Enter your question: ")
-        print(self.ask_llm(user_input))
+        self.ask_llm(user_input)
 
 def run() -> None:
     llm = llama.Llama()
