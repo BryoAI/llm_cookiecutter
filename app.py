@@ -14,6 +14,8 @@ class App:
 
     def ask_llm_terminal(self) -> None:
         user_input = input("Enter your question: ")
+        if user_input.lower() in {"exit", "quit"}:
+            sys.exit()
         self.ask_llm(user_input)
 
 def run() -> None:
