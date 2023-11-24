@@ -62,10 +62,10 @@ m4.2xlarge instance with 32GB RAM
 ```
 
 ### Language Model Inference (running locally)
-1. Run the inference script
+1. Run the app script
 If you want to play with the language model in your personal system or get quick answers to some questions (works without internet access as well)
 ```
-python inference.py
+python3 app.py
 ```
 
 ### Language Model API (serving)
