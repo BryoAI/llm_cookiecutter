@@ -84,7 +84,7 @@ curl -X POST http://YOUR_IP_ADDRESS:8000/llama -H "Content-Type: application/jso
 ```
 
 ## Use bryo hosted models
-We have also hosted our own language models for our Agents. We use GPUs and a much more powerful version of the Llama model.
+We have also hosted our own language models for our Agents. We use GPUs and a much more powerful version of the Llama model. We will provide support for Llama 3 soon!
 <br>
 Bryo will be happy to help you setup your own language models.
 You can reach out to us at: info@bryo.io
